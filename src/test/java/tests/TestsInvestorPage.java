@@ -1,6 +1,7 @@
 package tests;
 
 import com.codeborne.pdftest.PDF;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -15,6 +16,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+@Feature("Tests investor page")
 public class TestsInvestorPage extends BaseClass {
 
     @Test
