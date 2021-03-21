@@ -71,10 +71,6 @@ tasks.withType(Test) {
     }
 }
 
-tasks.withType(Test) {
-    systemProperties += System.properties
-}
-
 test {
     useJUnitPlatform()
 }
