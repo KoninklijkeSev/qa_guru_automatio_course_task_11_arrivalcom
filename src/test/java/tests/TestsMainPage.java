@@ -61,15 +61,15 @@ public class TestsMainPage extends BaseClass {
 
     @Test
     @Tag("functional")
-    @DisplayName("Check to open instagram page")
-    void checkToOpenInstagramPage() {
+    @DisplayName("Check to open twitter page")
+    void checkToOpenTwitterPage() {
 
         step("Open main page " + url, () -> {
             open(url);
         });
 
-        step("Click button in a bottom Instagram", () -> {
-            $(byText("Instagram")).click();
+        step("Click button in a bottom Twitter", () -> {
+            $(byText("Twitter")).click();
         });
 
         step("Switch page", () -> {
@@ -77,7 +77,7 @@ public class TestsMainPage extends BaseClass {
         });
 
         step("Check info thats open instagram", () -> {
-            $("[role='main']").shouldHave(text("Zero-emission solutions for cities. Human-centred, intelligent design - to revitalise public transportation."));
+            $("#react-root").shouldHave(text("Zero-emission solutions for cities. Human-centred, intelligent design - to revitalise public transportation."));
         });
     }
 
