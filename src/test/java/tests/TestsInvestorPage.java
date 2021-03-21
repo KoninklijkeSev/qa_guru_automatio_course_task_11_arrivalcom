@@ -37,7 +37,6 @@ public class TestsInvestorPage extends BaseClass {
     }
 
     @Test
-    @Disabled
     @Tag("functional")
     @DisplayName("Check to download investor presentation")
     void checkToDownloadInvestorPresentation() throws IOException {
